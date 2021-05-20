@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+  <ImageView
+      android:layout_marginTop="130dp"
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:src="@mipmap/wifi"
+      />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_below="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="网络异常，请您的检查网络"
+      android:textAlignment="center"
+      android:textSize="30dp"
+      />
+
+  <Button
+      android:id="@+id/button_retry"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:layout_below="@+id/textView"
+      android:text="重新加载"
+      android:textSize="20dp"
+      />
+
+ </RelativeLayout>
+
+</FrameLayout>
